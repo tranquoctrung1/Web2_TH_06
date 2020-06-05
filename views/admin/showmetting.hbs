@@ -1,0 +1,21 @@
+<div class="list-mettings">
+    <h4>Metting Id: {{this.mettingid}}</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">User Id</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this.data}}
+            <tr>
+                <th scope="row">{{userid}}</th>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <a class="btn btn-primary btn-sm" href="/admin/mettings" role="button">
+        <i class="fas fa-backward" aria-hidden="true"></i>
+    </a>
+</div>

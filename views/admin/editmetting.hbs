@@ -1,0 +1,25 @@
+<form class="form" method="POST">
+    <div class="form-group">
+        <label for="mettingid">Metting Id</label>
+        <input type="text" class="form-control" id="mettingid" name="mettingid" value="{{this.data.mettingid}}"
+            readonly>
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="{{this.data.name}}">
+    </div>
+    <div class="form-group">
+        <label for="shortdes">Short Des</label>
+        <input type="shortdes" class="form-control" id="shortdes" name="shortdes" value="{{this.data.shortdes}}">
+    </div>
+    <div class="form-group">
+        <label for="fulldes">Full Des</label>
+        <input type="text" class="form-control" id="fulldes" name="fulldes" value="{{this.data.fulldes}}">
+    </div>
+    <div class="form-group">
+        <label for="time">Time</label>
+        <input type="text" class="form-control" id="time" name="time" value="{{this.data.time}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Thay đổi</button>
+    <a class="btn btn-success" href="/admin/mettings" role="button"> Quay về </a>
+</form>

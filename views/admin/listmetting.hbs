@@ -1,0 +1,37 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Metting Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Short Des</th>
+            <th scope="col">Full Des</th>
+            <th scope="col">Date</th>
+            <th scope="col">Is Helped</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each this.data}}
+        <tr>
+            <th scope="row">{{mettingid}}</th>
+            <td>{{name}}</td>
+            <td>{{shortdes}}</td>
+            <td>{{fulldes}}</td>
+            <td>{{time}}</td>
+            {{#if ishelped}}
+            <td>true</td>
+            {{else}}
+            <td>false</td>
+            {{/if}}
+            <td>
+                <a class="btn btn-primary btn-sm" href="mettings/edit/{{mettingid}}" role="button">
+                    <i class="fas fa-edit" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-primary btn-sm" href="mettings/show/{{mettingid}}" role="button">
+                    <i class="fas fa-eye" aria-hidden="true"></i>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+<p>{{this.homeContent}}</p>
+<div class="p-3">
+    {{#each this.listMetting}}
+    <div class="card mb-2">
+        <div class="card-header">
+            {{name}}
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{fulldes}}</p>
+                <footer class="blockquote-footer" {{name}}<cite title="Source Title">{{format_date time}}</cite>
+                </footer>
+            </blockquote>
+            <hr>
+            <a href="javascript:;" class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

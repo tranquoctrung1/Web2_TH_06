@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 90%;
+}
+
+.list-mettings {
+  width: 100%;
+  padding: 10px;
+}
